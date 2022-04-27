@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: whitesmoke;
+}
+
+#gameBody {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+#mainChar {
+    width: 30px;
+    height: 70px;
+    background-color: springgreen;
+    position: relative;
+    top: 230px;
+/*    animation: character 500ms infinite;*/
+}
+
+.charAnimation {
+    animation: character 525ms;
+}
+#obstacle {
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+    left: 480px;
+    animation: obstacle 1.35s infinite linear;
+}
+
+@keyframes obstacle {
+    0% {left: 480px;}
+    100% {left: -40px; }
+}
+
+@keyframes character {
+    0% {top: 230px;}
+    40% {top: 100px;}
+    70% {top: 100px;}
+    100% {top: 230px;}
+}
