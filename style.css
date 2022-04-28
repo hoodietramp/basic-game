@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     background: whitesmoke;
@@ -20,12 +20,13 @@
     background-color: crimson;
     position: relative;
     top: 230px;
-/*    animation: character 500ms infinite;*/
+    /*    animation: character 500ms infinite;*/
 }
 
 .charAnimation {
     animation: character 525ms;
 }
+
 #obstacle {
     width: 30px;
     height: 30px;
@@ -38,13 +39,36 @@
 }
 
 @keyframes obstacle {
-    0% {left: 480px;}
-    100% {left: -40px; }
+    0% {
+        left: 480px;
+    }
+
+    100% {
+        left: -40px;
+    }
 }
 
 @keyframes character {
-    0% {top: 230px;}
-    40% {top: 100px;}
-    70% {top: 100px;}
-    100% {top: 230px;}
+    0% {
+        top: 230px;
+    }
+
+    40% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 230px;
+    }
+}
+
+#message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
