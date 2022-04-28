@@ -11,12 +11,13 @@
     margin: auto;
     margin-top: 150px;
     overflow: hidden;
+    background-color: skyblue;
 }
 
 #mainChar {
     width: 30px;
     height: 70px;
-    background-color: springgreen;
+    background-color: crimson;
     position: relative;
     top: 230px;
 /*    animation: character 500ms infinite;*/
@@ -26,9 +27,10 @@
     animation: character 525ms;
 }
 #obstacle {
-    width: 20px;
+    width: 30px;
     height: 30px;
-    background-color: white;
+    background-color: springgreen;
+    border-radius: 50%;
     position: relative;
     top: 200px;
     left: 480px;
